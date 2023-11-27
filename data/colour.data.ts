@@ -1,0 +1,18 @@
+export const lensHexCodes = {
+  blue: "#0000FF",
+  brown: "#A52A2A",
+  chrome: "#808080",
+  fire: "#FF4500",
+  gold: "#FFD700",
+  green: "#008000",
+  pink: "#FFC0CB",
+  purple: "#800080",
+  red: "#FF0000",
+  rose: "#FF007F",
+  silverblue: "#87CEEB",
+  smoke: "#848484",
+  clear: "#FFFFFF",
+  hvblue: "#000080",
+  IRhvblue: "#00008B",
+  IRsmoke: "#363636",
+};
