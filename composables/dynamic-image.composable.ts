@@ -15,7 +15,9 @@ function useImages(): ImagesComposable {
         // unknown type is required here to change the final type as typescript thinks that images.value[path] is a function, it is not.
         const image: unknown = images.value[path];
         const imagePath = (image as { default: string }).default;
-        if (filename(imagePath) === filename(fileName)) {
+        
+        const regex = new RegExp("^" + filename(fileName) + "(?:\\.[a-zA-Z0-9]+)?$");
+        if (regex.test(filename(imagePath))) {
           return imagePath;
         }
       }
